@@ -9,11 +9,11 @@ You might need to format your date from a api source or CSV, and need to import 
 
 ## Javascript
 ``` javascript
-dateTime = now;
-dateTime_DATE = dateTime.getPrefix(" ").toString("yyyy-MM-dd");
-dateTime_TIME = dateTime.getSuffix(" ");
-dateTime_FORMATTED = dateTime_DATE + "T" + dateTime_TIME;
+info now; // 01-Jan-2024 00:00:00
 
+info now.toString("yyyy-MM-dd'T'HH:mm:ss"); // 2024-01-01T00:00:00
+
+info now.toString("yyyy-MM-dd"); // 2024-01-01
 ```
 
 ## Supported Formats
